@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ICTC — Centre for Indian Culture and Tamil Civilization, AIMST University. Heritage & Wellness Research.">
+  <title>ICTC — Centre for Indian Culture and Tamil Civilization</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--
+    Translation pattern: every translatable element carries data-ta="..." (Tamil)
+    with English as its inner text. The nav toggle (script.js setLang) swaps
+    innerHTML between the two; the original English is cached in data-en on first
+    switch. To change either language, edit the element text or its data-ta value.
+  -->
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="./images/ictc-icon.png" alt="ICTC logo" width="34" height="34" loading="lazy">
+          <!-- <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="20" cy="8" r="2.4"/>
+            <circle cx="30.4" cy="14" r="2.4"/>
+            <circle cx="30.4" cy="26" r="2.4"/>
+            <circle cx="20" cy="32" r="2.4"/>
+            <circle cx="9.6" cy="26" r="2.4"/>
+            <circle cx="9.6" cy="14" r="2.4"/>
+            <path d="M20 8 L30.4 14 L30.4 26 L20 32 L9.6 26 L9.6 14 Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          </svg> -->
+        </span>
+        <span class="brand-text">
+          <strong>ICTC</strong>
+          <small data-ta="AIMST பல்கலைக்கழகம்">AIMST University</small>
+        </span>
+      </a>
+
+      <button class="nav-burger" id="nav-burger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" data-ta="எங்களைப் பற்றி">About</a>
+        <a href="#vision" data-ta="நோக்கமும் தொலைநோக்கும்">Mission &amp; Vision</a>
+        <a href="#structure" data-ta="அமைப்பு">Structure</a>
+        <a href="#events" data-ta="திட்டங்கள்">Programs</a>
+        <a href="#contact" data-ta="தொடர்பு">Contact</a>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch to Tamil">தமிழ்</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-ta="AIMST பல்கலைக்கழகம் · பாரம்பரியம் மற்றும் நலவாழ்வு ஆராய்ச்சி">AIMST University · Heritage &amp; Wellness Research</p>
+          <h1 data-ta="இந்திய கலாச்சாரம் மற்றும் தமிழ் நாகரிக மையம்">Centre for Indian Culture and Tamil Civilization</h1>
+          <p class="hero-lead" data-ta="செவ்வியல் ஞானத்தையும் ஒருங்கிணைந்த மருத்துவத்தையும் பேணுதல்">Preserving Classical Wisdom &amp; Integrative Healthcare</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about" data-ta="ICTC பற்றி அறிக">Discover ICTC</a>
+            <a class="btn btn-ghost" href="#events" data-ta="எங்கள் திட்டங்கள்">Our Programs</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <!-- Gopuram line art -->
+          <svg class="gopuram" viewBox="0 0 220 260" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <!-- finial -->
+            <path d="M110 8 v14"/>
+            <circle cx="110" cy="6" r="4"/>
+            <!-- tier 1 (top) -->
+            <path d="M84 46 h52 l-6-10 H90 Z"/>
+            <path d="M92 46 v-8 M104 46 v-8 M116 46 v-8 M128 46 v-8"/>
+            <!-- tier 2 -->
+            <path d="M74 74 h72 l-8-14 H82 Z"/>
+            <path d="M84 74 v-10 M98 74 v-10 M110 74 v-12 M122 74 v-10 M136 74 v-10"/>
+            <!-- tier 3 -->
+            <path d="M62 104 h96 l-10-16 H72 Z"/>
+            <path d="M74 104 v-12 M90 104 v-12 M110 104 v-14 M130 104 v-12 M146 104 v-12"/>
+            <!-- tier 4 -->
+            <path d="M48 138 h124 l-12-18 H60 Z"/>
+            <path d="M62 138 v-14 M80 138 v-14 M96 138 v-14 M110 138 v-16 M124 138 v-14 M140 138 v-14 M158 138 v-14"/>
+            <!-- base -->
+            <path d="M36 176 h148 v10 H36 Z"/>
+            <path d="M52 176 v-12 M76 176 v-12 M100 176 v-12 M124 176 v-12 M148 176 v-12 M172 176 v-12"/>
+            <!-- entrance -->
+            <path d="M60 260 v-74 h100 v74"/>
+            <path d="M92 260 v-46 a18 18 0 0 1 36 0 v46"/>
+            <path d="M110 214 v46"/>
+            <!-- ground -->
+            <path d="M24 260 h172"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0 48 C 240 0 480 0 720 24 C 960 48 1200 48 1440 12 L1440 48 Z" fill="var(--ivory)"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow" data-ta="கண்ணோட்டம்">Overview</p>
+        <h2 data-ta="எங்களைப் பற்றி">About Us</h2>
+        <div class="about-grid">
+          <p class="lead" data-ta="<strong>இந்திய கலாச்சாரம் மற்றும் தமிழ் நாகரிக மையம் (ICTC)</strong>, AIMST பல்கலைக்கழகத்தில் அமைந்துள்ள சிறந்த மையமாக, இந்திய கலாச்சாரம் மற்றும் தமிழ் நாகரிகத்தின் செழுமையான மரபுகள், அறிவு அமைப்புகள், மதிப்புகள் ஆகியவற்றை மேம்படுத்தும் பணியாற்றுகிறது.">The <strong>Centre for Indian Culture and Tamil Civilization (ICTC)</strong> at AIMST University serves as a centre of excellence dedicated to promoting the rich traditions, knowledge systems, and values of Indian culture and Tamil civilization.</p>
+          <p data-ta="மையத்தின் இயக்குநரான <strong>பேரா. டாக்டர் எம். ராஜந்தரன்</strong> தலைமையில், கலாச்சாரப் பாதுகாப்பு மற்றும் கல்வி ஆராய்ச்சி மட்டுமல்லாமல், பாரம்பரிய ஞானத்தால் ஈர்க்கப்பட்ட தொழில்முனைவும் படைப்பாற்றலும் ஊக்குவிக்கப்படுகின்றன.">Under the leadership of <strong>Professor Dr. M. Rajantheran</strong>, the Director of the Centre, ICTC focuses not only on cultural preservation and academic research but also encourages entrepreneurship and innovation inspired by traditional wisdom.</p>
+          <p class="about-wide" data-ta="மாணவர்களிடையே படைப்பாற்றல், தலைமைத்துவம், தொழில்முனைவு ஆகியவற்றை வளர்க்கும் கருத்தரங்குகள், பயிற்சிப் பட்டறைகள், கலாச்சார நிகழ்ச்சிகளை மையம் நடத்துகிறது. கலாச்சார பாரம்பரியத்தை நவீன தொழில்முனைவுத் திறன்களுடன் இணைப்பதன் மூலம், கலாச்சார நிலைத்தன்மைக்கும் பொருளாதார வளர்ச்சிக்கும் பங்களிக்கும் சமூகப் பொறுப்புள்ள தன்மையாளர்களை உருவாக்க இலக்கு கொண்டுள்ளது.">The Centre organizes seminars, workshops, and cultural programs that foster creativity, leadership, and enterprise among students. By blending cultural heritage with modern entrepreneurial skills, ICTC aims to nurture socially responsible individuals who contribute to both cultural sustainability and economic growth.</p>
+        </div>
+        <!-- <div class="pillar-row pillar-row-2">
+          <div class="pillar"><span class="pillar-num">01</span><h3 data-ta="பாரம்பரிய ஆராய்ச்சி">Heritage Research</h3><p data-ta="செவ்வியல் கையெழுத்துப் பிரதிகள், தமிழ் மொழியியல், வரலாற்று நாகரிகங்கள் ஆகியவற்றைப் பதிவுசெய்தல்.">Documenting classical manuscripts, Tamil linguistics, and historical civilizations.</p></div>
+          <div class="pillar"><span class="pillar-num">02</span><h3 data-ta="சித்த நலவாழ்வு">Siddha Wellness</h3><p data-ta="முழுமையான உடல்நலம், சித்த மருத்துவம் மற்றும் சான்றிதழ் யோக மனநலத் திட்டங்களை மேம்படுத்துதல்.">Promoting holistic health, Siddha medicine, and certified yoga mental health programs.</p></div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ============ MISSION & VISION ============ -->
+    <section class="section section-alt" id="vision">
+      <div class="container">
+        <p class="eyebrow" data-ta="அடிப்படைக் கொள்கைகள்">What drives us</p>
+        <h2 data-ta="நோக்கமும் தொலைநோக்கும்">Mission &amp; Vision</h2>
+        <div class="vm-grid">
+          <article class="vm-card">
+            <h3 data-ta="எங்கள் நோக்கம்">Our Mission</h3>
+            <p data-ta="ஆராய்ச்சி, கல்வி மற்றும் உலகளாவிய ஒத்துழைப்பின் மூலம் வளமான கல்வி மற்றும் கலாச்சாரச் சூழலை உருவாக்குவது.">To create an enriching academic and cultural environment through research, education, and global collaborations.</p>
+          </article>
+          <article class="vm-card vm-vision">
+            <h3 data-ta="எங்கள் தொலைநோக்கு">Our Vision</h3>
+            <p data-ta="தமிழ் ஆய்வுகளையும் இந்திய நாகரிகத்தையும் பாதுகாத்து, மேம்படுத்தி, முன்னேற்றுவதில் முன்னணி நிறுவனமாகத் திகழ்வது.">To be a leading institution preserving, promoting, and advancing Tamil Studies and Indian Civilization.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ORGANIZATION CHART & GOVERNANCE ============ -->
+    <section class="section" id="structure">
+      <div class="container">
+        <p class="eyebrow" data-ta="தலைமை">Leadership</p>
+        <h2 data-ta="நிர்வாக அமைப்பும் ஆளுமையும்">Organization Chart &amp; Governance</h2>
+
+        <div class="org">
+          <div class="org-node org-chief">
+            <img class="org-avatar" src="images/avatars/vc.svg" alt="" loading="lazy">
+            <div class="org-info">
+              <span class="org-role" data-ta="துணைவேந்தர் மற்றும் தலைமை நிர்வாகி">Vice Chancellor &amp; Chief Executive</span>
+              <span class="org-name" data-ta="பேரா. சி.எச்.எம். டாக்டர் எஸ். கதிரேசன்">Prof. CHM. Dr. S. Kathiresan</span>
+            </div>
+          </div>
+
+          <div class="org-line" aria-hidden="true"></div>
+
+          <div class="org-node org-director">
+            <img class="org-avatar" src="images/avatars/coo.svg" alt="" loading="lazy">
+            <div class="org-info">
+              <span class="org-role" data-ta="தலைமை செயல்பாட்டு அதிகாரி மற்றும் கல்வி ஆலோசகர்">Chief Operating Officer &amp; Academic Advisor</span>
+              <span class="org-name" data-ta="பேரா. டாக்டர் கிரண் ரெட்டி மேகா">Prof. Dr. Kiran Reddy Meka</span>
+            </div>
+          </div>
+
+          <div class="org-line" aria-hidden="true"></div>
+
+          <div class="org-node org-director">
+            <img class="org-avatar" src="images/avatars/director.svg" alt="" loading="lazy">
+            <div class="org-info">
+              <span class="org-role" data-ta="இயக்குநர்">Director</span>
+              <span class="org-name" data-ta="பேரா. டாக்டர் எம். ராஜந்தரன்">Prof. Dr. M. Rajantheran</span>
+            </div>
+          </div>
+
+          <div class="org-line org-line-short" aria-hidden="true"></div>
+
+          <div class="org-node">
+            <img class="org-avatar" src="images/avatars/senior.svg" alt="" loading="lazy">
+            <div class="org-info">
+              <span class="org-role" data-ta="மூத்த அதிகாரி">Senior Officer</span>
+              <span class="org-name" data-ta="திரு. கே. ஜெயச்சந்திரன்">Mr. K. Jayachandran</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CORE ACTIVITIES & PROGRAMS ============ -->
+    <section class="section section-alt" id="events">
+      <div class="container">
+        <p class="eyebrow" data-ta="நாங்கள் செய்வது">What we do</p>
+        <h2 data-ta="முக்கிய செயல்பாடுகளும் திட்டங்களும்">Core Activities &amp; Programs</h2>
+
+        <div class="event-grid">
+          <article class="event-card">
+            <button type="button" class="event-img-btn" data-gallery="wellness-course" aria-label="View gallery: Wellness Programme certificate course">
+              <img class="event-img" src="images/wellness-course.webp" alt="Wellness Programme – Mental Health / Yoga Therapy" loading="lazy">
+              <span class="zoom-badge" aria-hidden="true">＋</span>
+            </button>
+            <span class="event-cat" data-ta="சான்றிதழ் படிப்பு">Certificate Course</span>
+            <h3 data-ta="நலவாழ்வுத் திட்டம் — மனநலம் / யோக சிகிச்சை">Wellness Programme — Mental Health / Yoga Therapy</h3>
+            <p data-ta="கலப்பு முறையில், மூன்று முதல் ஆறு மாத காலம். குறைந்தது ஒரு பாடத்தில் தேர்ச்சி பெற்ற SPM தகுதியுள்ளவர்களுக்கு திறந்தது; தமிழ் மற்றும் ஆங்கிலத்தில் வழங்கப்படுகிறது. பாடத்திட்டம் <em>யோக சூத்திரம்</em>, <em>திருமந்திரம்</em> ஆகியவற்றை அடிப்படையாகக் கொண்டது; நடைமுறை மதிப்பீடுகள், MCQ எழுத்துத் தேர்வுகள், விளக்கக் காட்சிகள் உள்ளடங்கியவை.">Hybrid mode, three to six months. Open to candidates with SPM (minimum one credit), delivered in Tamil and English. Curriculum references the <em>Yoga Sutra</em> and <em>Thirumanthiram</em>, with practical evaluations, MCQ exams, and presentations.</p>
+          </article>
+          <article class="event-card">
+            <button type="button" class="event-img-btn" data-gallery="aicsm-2025" aria-label="View gallery: AIMST International Conference on Siddha Medicine 2025">
+              <img class="event-img" src="images/aicsm-2025.webp" alt="AIMST International Conference on Siddha Medicine 2025" loading="lazy">
+              <span class="zoom-badge" aria-hidden="true">＋</span>
+            </button>
+            <span class="event-cat" data-ta="மாநாடு">Conference</span>
+            <h3 data-ta="AIMST சித்த மருத்துவ பன்னாட்டு மாநாடு 2025 (AICSM 2025)">AICSM 2025</h3>
+            <p data-ta="2025 நவம்பர் 22–23 அன்று நடைபெற்றது. ICTC ஏற்பாட்டில், சென்னை Almaa Herbals முக்கிய நிதியாளராகவும், AIMST பல்கலைக்கழகத்தின் துணைவேந்தர் YB டத்தோ ஸ்ரீ எம். சரவணன் தொடங்கி வைத்தவராகவும் நடைபெற்றது. 203 ஆய்வுக் கட்டுரைகள்; இந்தியா, இலங்கை, சிங்கப்பூர், சீனா, ஜெர்மனி, தென்னாப்பிரிக்கா, மொரீஷியஸ், அமெரிக்கா உள்ளிட்ட ஒன்பது நாடுகளைச் சேர்ந்த 31 நிறுவனங்களின் பிரதிநிதிகள் பங்கேற்றனர்.">Held 22–23 November 2025, organized by ICTC with Almaa Herbals (Chennai) as main sponsor and inaugurated by YB Datuk Seri M. Saravanan, Pro-Chancellor. Featured 203 abstracts and delegates from 31 institutions across nine countries.</p>
+          </article>
+          <article class="event-card">
+            <button type="button" class="event-img-btn" data-gallery="aicsm-report" aria-label="View gallery: Post-Conference Report AICSM 2025">
+              <img class="event-img" src="images/aicsm-report.webp" alt="Post-Conference Report: AICSM 2025" loading="lazy">
+              <span class="zoom-badge" aria-hidden="true">＋</span>
+            </button>
+            <span class="event-cat" data-ta="அறிக்கை">Report</span>
+            <h3 data-ta="மாநாட்டுக் கீழ் அறிக்கை: AICSM 2025">Post-Conference Report: AICSM 2025</h3>
+            <p data-ta="சென்னை Almaa Herbals மற்றும் சித்த அறிவியல் ஆராய்ச்சி மலேசியா அகாடமியுடன் இணைந்து, பாரம்பரிய தமிழ் மருத்துவ ஞானத்தை உலக அரங்கில் முன்னிலைப்படுத்திய மைல்கல் நிகழ்வு.">A significant milestone in promoting traditional Tamil medical wisdom on a global stage, in collaboration with Almaa Herbals (Chennai) and the Siddha Science Research Malaysia Academy.</p>
+          </article>
+          <article class="event-card">
+            <button type="button" class="event-img-btn" data-gallery="appreciation-lunch" aria-label="View gallery: Appreciation Lunch">
+              <img class="event-img" src="images/appreciation-lunch.webp" alt="Appreciation Lunch" loading="lazy">
+              <span class="zoom-badge" aria-hidden="true">＋</span>
+            </button>
+            <span class="event-cat" data-ta="பாராட்டு">Appreciation</span>
+            <h3 data-ta="பாராட்டு விருந்து">Appreciation Lunch</h3>
+            <p data-ta="AICSM 2025 இன் ஏற்பாட்டுக் குழு, துணைக் குழு உறுப்பினர்கள், பணியாளர்கள் மற்றும் துப்புரவுப் பணியாளர்களின் மதிப்புமிக்க பங்களிப்பைப் பாராட்டுவதற்காக 2025 டிசம்பர் 11 அன்று ஏற்பாடு செய்யப்பட்டது.">Organized 11 December 2025 to acknowledge the organizing committee, subcommittee members, staff, and cleaning personnel for their valuable contributions during AICSM 2025.</p>
+          </article>
+          <article class="event-card">
+            <button type="button" class="event-img-btn" data-gallery="vijayadhasami" aria-label="View gallery: Vijayadhasami Celebration">
+              <img class="event-img" src="images/vijayadhasami.webp" alt="Vijayadhasami Celebration" loading="lazy">
+              <span class="zoom-badge" aria-hidden="true">＋</span>
+            </button>
+            <span class="event-cat" data-ta="கொண்டாட்டம்">Celebration</span>
+            <h3 data-ta="விஜயதசமி கொண்டாட்டம்">Vijayadhasami Celebration</h3>
+            <p data-ta="2025 அக்டோபர் 2 அன்று இந்திய கலாச்சாரச் சங்கத்துடன் இணைந்து நடைபெற்றது. அறிவும் நீதியும் அறியாமையை வெல்வதை, மரபான சடங்குகள், விளக்கேற்றம், செவ்வியல் இசை மற்றும் நடனத்துடன் கொண்டாடியது.">Held 2 October 2025 with the Indian Culture Society, celebrating the triumph of knowledge and righteousness over ignorance through traditional rituals, lamp lighting, classical music, and dance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="eyebrow" data-ta="எங்களைத் தொடர்பு கொள்ள">Get in touch</p>
+        <h2 data-ta="இடமும் அதிகாரபூர்வ தொடர்பும்">Location &amp; Official Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 data-ta="முகவரி">Address</h3>
+            <p data-ta="AIMST இந்திய கலாச்சாரம் மற்றும் தமிழ் நாகரிக மையம்,<br>AIMST பல்கலைக்கழகம், பட்டு 3 1/2, புக்கிட் ஏர் நாசி,<br>ஜாலான் பெடோங்–செமெலிங், 08100 பெடோங், கெதா, மலேசியா.">AIMST Centre for Indian Culture &amp; Tamil Civilization,<br>AIMST University, Batu 3 1/2, Bukit Air Nasi,<br>Jalan Bedong–Semeling, 08100 Bedong, Kedah, Malaysia.</p>
+          </div>
+          <div class="contact-card">
+            <h3 data-ta="மின்னஞ்சல்">Email</h3>
+            <p><span data-ta="பேரா. டாக்டர் எம். ராஜந்தரன்">Prof. Dr. M. Rajantheran</span>:<br><a href="mailto:rajantheran@aimst.edu.my">rajantheran@aimst.edu.my</a></p>
+            <p><span data-ta="திரு. கே. ஜெயச்சந்திரன்">Mr. K. Jayachandran</span>:<br><a href="mailto:jayachandran@aimst.edu.my">jayachandran@aimst.edu.my</a></p>
+          </div>
+          <div class="contact-card">
+            <h3 data-ta="தொலைபேசி">Telephone</h3>
+            <p><span data-ta="அலுவலகம்">Office</span>: <a href="tel:+604298000">+60 429 8000</a> <span class="muted">(Ext. 8123)</span><br>
+            <span data-ta="பேரா. ராஜந்தரன்">Prof. Rajantheran</span>: <a href="tel:+60163547780">+6016 354 7780</a><br>
+            <span data-ta="திரு. ஜெயச்சந்திரன்">Mr. Jayachandran</span>: <a href="tel:+60126727556">+6012 672 7556</a></p>
+          </div>
+          <div class="contact-card">
+            <h3 data-ta="அலுவலக நேரம்">Office Hours</h3>
+            <p data-ta="திங்கள் – வெள்ளி<br>காலை 8:00 – மாலை 5:00">Monday – Friday<br>8:00 AM – 5:00 PM</p>
+          </div>
+        </div>
+
+        <a class="contact-map" href="https://www.google.com/maps/search/?api=1&amp;query=AIMST+University+Semeling+Bedong+Kedah" target="_blank" rel="noopener" aria-label="Open AIMST University location in Google Maps">
+          <img src="images/aimst-map.svg" alt="Stylized map showing AIMST University in Semeling, Bedong, Kedah" loading="lazy">
+          <span class="map-caption">Open in Google Maps ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Centre for Indian Culture and Tamil Civilization. All Rights Reserved.</p>
+      <a href="#top" class="back-top" data-ta="மேலே செல்ல ↑">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Image gallery lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery" aria-hidden="true">
+    <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close gallery">✕</button>
+    <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image">‹</button>
+    <figure class="lb-fig">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next image">›</button>
+    <span class="lb-counter" id="lb-counter"></span>
+  </div>
+
+  <div class="lang-toast" id="lang-toast" role="status" aria-live="polite">Tamil content coming soon.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
