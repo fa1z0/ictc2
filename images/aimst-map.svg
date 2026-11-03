@@ -4,6 +4,7 @@
       <stop offset="0" stop-color="#f6efdd"/>
       <stop offset="1" stop-color="#efe4c9"/>
     </linearGradient>
+<<<<<<< HEAD
   </defs>
 
   <!-- land -->
@@ -63,9 +64,106 @@
     <path d="M0 0 h110" stroke-width="4"/>
     <path d="M0 -7 v14 M110 -7 v14" stroke-width="4"/>
     <text x="122" y="6" font-family="Georgia, serif" font-size="17" stroke="none">1 km</text>
+=======
+    <clipPath id="frame-clip">
+      <rect x="2" y="2" width="956" height="416" rx="5"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame-clip)" font-family="Georgia, 'Times New Roman', serif">
+
+    <!-- land -->
+    <rect width="960" height="420" fill="url(#land)"/>
+
+    <!-- paddy fields (Kedah's characteristic land use) -->
+    <g fill="#e6dcb8" stroke="#d6c89e" stroke-width="1.5">
+      <g>
+        <rect x="650" y="270" width="220" height="75" rx="2"/>
+        <path d="M650 282 H870 M650 294 H870 M650 306 H870 M650 318 H870 M650 330 H870" fill="none"/>
+      </g>
+      <g>
+        <rect x="460" y="360" width="220" height="50" rx="2"/>
+        <path d="M460 372 H680 M460 384 H680 M460 396 H680" fill="none"/>
+      </g>
+      <g>
+        <rect x="30" y="300" width="70" height="80" rx="2"/>
+        <path d="M30 312 H100 M30 324 H100 M30 336 H100 M30 348 H100 M30 360 H100 M30 372 H100" fill="none"/>
+      </g>
+    </g>
+
+    <!-- river (crossed by the main road at the bridge, NE) -->
+    <path d="M0 70 C 180 110, 360 145, 560 158 S 840 178, 960 172" fill="none" stroke="#a8bfca" stroke-width="14" stroke-linecap="round"/>
+    <path d="M0 70 C 180 110, 360 145, 560 158 S 840 178, 960 172" fill="none" stroke="#c9dade" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- minor roads: every road connects to the main route or the frame -->
+    <g fill="none" stroke="#d8c9a6" stroke-width="8" stroke-linecap="round">
+      <path d="M0 250 L300 345"/>
+      <path d="M430 298 L380 420"/>
+    </g>
+
+    <!-- main road: Jalan Bedong-Semeling -->
+    <path d="M40 418 L110 400 C 300 350, 430 300, 560 244 S 830 150, 950 120" fill="none" stroke="#d8c9a6" stroke-width="20" stroke-linecap="round"/>
+    <path d="M40 418 L110 400 C 300 350, 430 300, 560 244 S 830 150, 950 120" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+    <path d="M40 418 L110 400 C 300 350, 430 300, 560 244 S 830 150, 950 120" fill="none" stroke="#e6b84a" stroke-width="3" stroke-dasharray="16 14" stroke-linecap="round"/>
+
+    <!-- bridge ticks where the road spans the river -->
+    <g stroke="#746753" stroke-width="3" stroke-linecap="round">
+      <path d="M740 163 L747 186"/>
+      <path d="M765 156 L772 179"/>
+    </g>
+
+    <!-- town dots -->
+    <g fill="#746753" stroke="#faf6ec" stroke-width="2.5">
+      <circle cx="210" cy="372" r="8"/>
+      <circle cx="852" cy="146" r="8"/>
+    </g>
+
+    <!-- AIMST marker: the site's gopuram as a roadside monument -->
+    <g transform="translate(500 250)">
+      <ellipse cx="0" cy="4" rx="30" ry="7" fill="#2b2118" opacity=".14"/>
+      <g fill="#6e1a1a" stroke="#c8992f" stroke-width="2.5" stroke-linejoin="round">
+        <path d="M-32 0 L-26 -18 L26 -18 L32 0 Z"/>
+        <path d="M-26 -18 L-19 -34 L19 -34 L26 -18 Z"/>
+        <path d="M-19 -34 L-13 -48 L13 -48 L19 -34 Z"/>
+      </g>
+      <path d="M-6 0 v-7 a6 6 0 0 1 12 0 v7 Z" fill="#faf6ec" opacity=".92"/>
+      <path d="M0 -48 v-5" stroke="#c8992f" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="0" cy="-55" r="4" fill="#c8992f" stroke="#4d1010" stroke-width="2"/>
+      <path d="M-34 0 H34" stroke="#c8992f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- leader line to the label card (parked in clear space, no overlaps) -->
+    <path d="M430 228 H470" stroke="#c8992f" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- AIMST label card -->
+    <g>
+      <rect x="120" y="190" width="310" height="76" rx="8" fill="#6e1a1a" stroke="#c8992f" stroke-width="1.5"/>
+      <text x="142" y="226" font-size="28" fill="#faf6ec">AIMST University</text>
+      <text x="142" y="255" font-size="22" fill="#e7cd8a">Semeling, 08100 Bedong</text>
+    </g>
+
+    <!-- town labels -->
+    <g fill="#2b2118">
+      <text x="238" y="401" font-size="30">Bedong</text>
+      <text x="836" y="140" font-size="30" text-anchor="end">Semeling</text>
+    </g>
+
+    <!-- north arrow -->
+    <g transform="translate(910 55)">
+      <path d="M0 -34 L10 0 L0 -8 L-10 0 Z" fill="#746753"/>
+      <text x="0" y="24" text-anchor="middle" font-size="17" font-weight="bold" fill="#746753">N</text>
+    </g>
+
+    <!-- map note, aligned to the frame corner -->
+    <text x="24" y="36" font-size="17" fill="#746753">Schematic diagram, not to scale</text>
+
+>>>>>>> 5379876 (Update map)
   </g>
 
   <!-- frame -->
   <rect x="1" y="1" width="958" height="418" fill="none" stroke="#c8992f" stroke-width="2" rx="6"/>
+<<<<<<< HEAD
   <text x="480" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#746753" font-style="italic">Stylized map — not to scale</text>
+=======
+>>>>>>> 5379876 (Update map)
 </svg>
